@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#f5f7fb" />
+    <meta name="theme-color" content="#f5f7fb" id="theme-color-meta">
+    <meta name="description" content="Sarthak • Liquid glass portfolio with a clean, Apple-inspired aesthetic." />
+    <title>Sarthak </title>
+    <link rel="shortcut icon" href="assets/main.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <script>
+      // Dynamically set theme color for all browsers
+      function setThemeColor() {
+        const meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) {
+          meta.setAttribute('content',
+            window.matchMedia('(prefers-color-scheme: dark)').matches ? '#0b0d12' : '#f5f7fb'
+          );
+        }
+      }
+      setThemeColor();
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setThemeColor);
+    </script>
+  </head>
+  <body>
+    <!-- Background canvas with animated blobs -->
+    <div id="bg" aria-hidden="true">
+      <span class="blob b1"></span>
+      <span class="blob b2"></span>
+      <span class="blob b3"></span>
+      <span class="grain" aria-hidden="true"></span>
+    </div>
+
+    <!-- Wrap the whole page so we can apply stretch transform -->
+    <div id="page">
+      <!-- Navigation -->
+<header class="nav glass" role="banner">
+    <a class="brand" href="#home" aria-label="Home">
+      <img src="assets/main.svg" alt="Logo" width="28" height="28" />
+      <span>Sarthak</span>
+    </a>
+    <nav class="links" role="navigation">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact" class="btn small">Contact</a>
+    </nav>
+  </header>
+    <div id="nav-spacer" aria-hidden="true"></div>
+
+      <main id="home">
+        <!-- Hero -->
+        <section class="hero">
+          <div class="hero__card glass" data-reveal data-tilt>
+            <div class="badge glass subtle">
+              <img src="assets/main.svg" alt="Badge" width="18" height="18" />
+              <span>Omni </span>
+            </div>
+            <h1 class="title">
+               Crafting calm, delightful, and fast web experiences.
+             </h1>
+            <p class="sub">
+              <span id="intro" class="typing" data-text="I’m Sarthak — a developer who loves clean interfaces, smooth motion, and human‑friendly design." aria-live="polite"></span>
+            </p>
+            <div class="cta">
+              <a class="btn primary" href="#work">View Work</a>
+              <a class="btn" href="#contact">Get in touch</a>
+            </div>
+            <ul class="social">
+              <li><a href="https://www.linkedin.com/" rel="noopener" target="_blank">LinkedIn</a></li>
+              <li><a href="https://github.com/Syrthax" rel="noopener" target="_blank">GitHub</a></li>
+              <li><a href="https://instagram.com/_sythrax" rel="noopener" target="_blank">Instagram</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+          <div class="grid">
+            <article class="card glass" data-reveal data-tilt>
+              <h3>Principles</h3>
+              <p>
+                Accessibility first, performance as a feature, and details that
+                feel invisible. The result: interfaces that simply feel right.
+              </p>
+            </article>
+            <article class="card glass" data-reveal data-tilt>
+              <h3>Focus</h3>
+              <p>
+                Frontend engineering, design systems, animations, and turning
+                ideas into production‑ready experiences.
+              </p>
+            </article>
+            <article class="card glass" data-reveal data-tilt>
+              <h3>Stack</h3>
+              <p>
+                HTML, CSS, JavaScript — with care for semantics, progressive
+                enhancement, and maintainability.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Work -->
+        <section id="work" class="section">
+          <h2 class="section__title" data-reveal>Building</h2>
+          <div class="work grid">
+            <a class="work__item glass" href="#" aria-label="Koisk" data-reveal data-tilt>
+              <div class="work__meta">
+                <h4>Koisk</h4>
+                <p>A pdf reader with incredible UI  (prototype stage)</p>
+              </div>
+            </a>
+            <a class="work__item glass" href="#" aria-label="Soura" data-reveal data-tilt>
+              <div class="work__meta">
+                <h4>Soura</h4>
+                <p>Chrome extension for enhanced downloading assets (prototype stage)</p>
+              </div>
+            </a>
+            <a class="work__item glass" href="#" aria-label="Project 3" data-reveal data-tilt>
+              <div class="work__meta">
+                <h4>Omni</h4>
+                <p>High‑performance Profile UI. (final stage)</p>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+          <div class="contact__card glass" data-reveal data-tilt>
+            <h2>Let’s build something thoughtful.</h2>
+            <p>
+              Open to collaborations, or just a friendly hello.
+            </p>
+            <div class="cta">
+              <a class="btn primary" href="https://www.instagram.com/_sythrax" target="_blank" rel="noopener">Message on instagram</a>
+              <a class="btn" href="#home">Back to top</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> Sarthak. Built with ❤️ in India.</p>
+      </footer>
+    </div>
+
+    <noscript>
+      <style>
+        [data-reveal]{opacity:1;transform:none}
+      </style>
+    </noscript>
+  </body>
+</html>

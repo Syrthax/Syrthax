@@ -30,10 +30,4 @@ LLMs • Embeddings • Prompt Engineering • Claude Code • GitHub Copilot
 
 ---
 
-## 🏆 Achievements
-- #31 / 1349 in national HackerRank challenge
-- 1st place at IIT Hyderabad hackathon
-
----
-
 🌐 https://sarthakg.com

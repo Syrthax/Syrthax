@@ -1,4 +1,8 @@
-# Hi, I'm Sarthak 👋
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="light.svg">
+  <img alt="Sarthak's GitHub profile banner" src="light.svg">
+</picture>
 
 AIML student focused on AI systems, simulations, and full-stack applications.
 

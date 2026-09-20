@@ -20,17 +20,17 @@ Building practical software combining AI, engineering, and design.
 ---
 
 ## 🛠️ Projects
-- **Kiosk** — Minimal cross-platform PDF reader
-- **iDo** — Fast minimalist productivity app
-- **NutriScan** — AI-powered nutrition scanner
-- **Embark AI** — Agentic AI Minecraft gameplay system
+- **Kiosk** — Open-source PDF reader spanning web, desktop, mobile, and browser extensions
+- **ido** — Minimalist, open-source task tracker built for speed and clean architecture
+- **NutriScan** — Turns a phone into a nutrition scanner using the OpenFoodFacts database
+- **Axiom** — A Minecraft bot that thinks and defends itself, built with Mineflayer + a local LLM via Ollama
 
 ---
 
 ## 💻 Stack
-Python • TypeScript • Kotlin • React • Flutter • Flask • Next.js • Node.js
+Python • TypeScript • Kotlin • Rust • React • Next.js • Flutter • Tauri
 
-LLMs • Embeddings • Prompt Engineering • Claude Code • GitHub Copilot
+Git • Docker • Google Cloud • Cloudflare • Claude Code • Figma
 
 ---
 
